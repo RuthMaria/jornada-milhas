@@ -19,13 +19,12 @@
         >
       </mat-button-toggle-group>
 
-      <mat-chip-listbox
-        (click)="openDialog()"
-        aria-label="Seleção de passagens"
-      >
-        <mat-chip-option (click)="openDialog()">1 adulto</mat-chip-option>
-        <mat-chip-option (click)="openDialog()">Econômica</mat-chip-option>
-      </mat-chip-listbox>
+      <mat-chip (click)="formBuscaService.openDialog()">
+        <div class="inner"><mat-icon>check</mat-icon> 1 adulto</div>
+      </mat-chip>
+      <mat-chip (click)="formBuscaService.openDialog()">
+        <div class="inner"><mat-icon>check</mat-icon> Econômica</div>
+      </mat-chip>
     </div>
 
     <div class="flex-container">
